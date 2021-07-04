@@ -284,7 +284,7 @@ online_update\yasu_src\packages\solver.storm\data
     
 ## Have a repository secret added
      
-Have someone with write-access to [oneline_update](https://github.com/i-RIC/online_update) add a repository secret to the solver.
+Have someone with write-access to [oneline_update](https://github.com/i-RIC/online_update) add a repository secret (ONLINE_UPDATE_TOKEN) to the solver.
 
 ## Push to github and verify the actions tab
 
