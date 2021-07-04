@@ -5,7 +5,7 @@ project(<BASENAME> Fortran)
 include(GNUInstallDirs)
 
 # set CMAKE_PREFIX_PATH to the directory containing iriclibConfig.cmake
-# ie -DCMAKE_PREFIX_PATH=c:/iricdev/lib/install/iricdev-0.2.9/lib/cmake/iriclib
+# ie -DCMAKE_PREFIX_PATH=c:/iricdev/lib/install/iriclib-0.2.9/lib/cmake/iriclib
 find_package(iriclib REQUIRED)
 
 # Change this to ON if solver requires OpenMP
