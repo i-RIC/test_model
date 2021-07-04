@@ -259,31 +259,20 @@ Go back to the 'Git Bash' window and edit .github\workflows\build.yml
     $ code -n .github/workflows/build.yml
     and replace <PACKAGE_DIR> with your corresponding package directory:
   
-    online_update\dev_src\packages\solver.cap\data
-    online_update\dev_src\packages\solver.ceri1d\data
-    online_update\dev_src\packages\solver.dhabsim\data
-    online_update\dev_src\packages\solver.elimo\data
-    online_update\dev_src\packages\solver.evatrip\data
-    online_update\dev_src\packages\solver.evatrip_pro\data
-    online_update\dev_src\packages\solver.fastmech\data
-    online_update\dev_src\packages\solver.mflow\data
-    online_update\dev_src\packages\solver.morpho2dh\data
-    online_update\dev_src\packages\solver.nays2d+\data
-    online_update\dev_src\packages\solver.nays2db\data
-    online_update\dev_src\packages\solver.nays2dflood\data
-    online_update\dev_src\packages\solver.nays2dflood_dev\data
-    online_update\dev_src\packages\solver.nays2dh\data
-    online_update\dev_src\packages\solver.nays2dv\data
-    online_update\dev_src\packages\solver.nays3dv\data
-    online_update\dev_src\packages\solver.nayscube\data
-    online_update\dev_src\packages\solver.naysdw2\data
-    online_update\dev_src\packages\solver.nayseddy\data
-    online_update\dev_src\packages\solver.river2d\data
-    online_update\dev_src\packages\solver.sac\data
-    online_update\dev_src\packages\solver.srm\data
-    online_update\dev_src\packages\solver.storm\data
-    online_update\dev_src\packages\solver.utt\data
-    online_update\dev_src\packages\solver.vel_estimate\data
+    online_update\yasu_src\packages\solver.cap\data
+    online_update\yasu_src\packages\solver.ceri1d\data
+    online_update\yasu_src\packages\solver.elimo\data
+    online_update\yasu_src\packages\solver.evatrip\data
+    online_update\yasu_src\packages\solver.fastmech\data
+    online_update\yasu_src\packages\solver.mflow\data
+    online_update\yasu_src\packages\solver.morpho2dh\data
+    online_update\yasu_src\packages\solver.nays2dflood\data
+    online_update\yasu_src\packages\solver.nays2dh\data
+    online_update\yasu_src\packages\solver.nayscube\data
+    online_update\yasu_src\packages\solver.river2d\data
+    online_update\yasu_src\packages\solver.sac\data
+    online_update\yasu_src\packages\solver.srm\data
+    online_update\yasu_src\packages\solver.storm\data
 
 
 ## Create a Personal Access Token (for authentication)
