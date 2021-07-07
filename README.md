@@ -266,20 +266,32 @@ Go back to the 'Git Bash' window and edit `.github\workflows\build.yml`
 $ code -n .github/workflows/build.yml
 and replace <PACKAGE_DIR> with your corresponding package directory:
 
-packages\solver.cap\data
-packages\solver.ceri1d\data
-packages\solver.elimo\data
-packages\solver.evatrip\data
-packages\solver.fastmech\data
-packages\solver.mflow\data
-packages\solver.morpho2dh\data
-packages\solver.nays2dflood\data
-packages\solver.nays2dh\data
-packages\solver.nayscube\data
-packages\solver.river2d\data
-packages\solver.sac\data
-packages\solver.srm\data
-packages\solver.storm\data
+packages\solver.cap
+packages\solver.ceri1d
+packages\solver.dhabsim
+packages\solver.elimo
+packages\solver.evatrip
+packages\solver.evatrip_pro
+packages\solver.fastmech
+packages\solver.mflow
+packages\solver.morpho2dh
+packages\solver.nays2d+
+packages\solver.nays2db
+packages\solver.nays2dflood
+packages\solver.nays2dflood_dev
+packages\solver.nays2dh
+packages\solver.nays2dv
+packages\solver.nays3dv
+packages\solver.nayscube
+packages\solver.naysdw2
+packages\solver.nayseddy
+packages\solver.naysmini
+packages\solver.river2d
+packages\solver.sac
+packages\solver.srm
+packages\solver.storm
+packages\solver.utt
+packages\solver.vel_estimate
 ```
     
 ## Have a repository secret added
