@@ -19,11 +19,10 @@ env:
   INSTALL_DIR: INSTALL
 
   # Repos
-  IRICLIB_REPO: i-RIC/iriclib
   ONLINE_UPDATE_REPO: i-RIC/online_update
 
   # github API url
-  IRICLIB_API_URL: ${{github.api_url}}/repos/i-RIC/iriclib
+  IRICLIB_API_URL: ${{github.api_url}}/repos/i-RIC/iriclib_v4
   IFW_API_URL: ${{github.api_url}}/repos/scharlton2/ifw
 
   # oneAPI
@@ -60,7 +59,7 @@ jobs:
         # see https://docs.github.com/en/rest/reference/repos#get-the-latest-release
         # see https://docs.github.com/ja/rest/reference/repos#get-the-latest-release
         $latest = (Invoke-WebRequest -Uri $env:IRICLIB_API_URL/releases/latest -Method GET).Content | ConvertFrom-Json
-        $url = ($latest.assets | Where-Object {$_.name -match "^iricsdk-(?<major>0|[1-9]\d*)\.(?<minor>[0|1-9]\d*)\.(?<patch>[0|1-9]\d*)\.zip$"}).browser_download_url
+        $url = ($latest.assets | Where-Object {$_.name -match "^iricsdk-(?<major>0|[1-9]\d*)\.(?<minor>[0|1-9]\d*)\.(?<patch>[0|1-9]\d*)\.7z$"}).browser_download_url
         curl -LO $url
         mkdir c:\iricdev\lib
         $zipfile = $matches[0]
@@ -142,7 +141,7 @@ jobs:
     - name: Commit and push branch
       uses: actions-js/push@master
       with:
-        github_token: ${{secrets.WORKFLOW_PAT}}
+        github_token: ${{secrets.ONLINE_UPDATE_TOKEN}}
         repository: ${{env.ONLINE_UPDATE_REPO}}
         directory: online_update
         branch: __${{github.event.repository.name}}_${{github.run_number}}        # @todo remove branch
