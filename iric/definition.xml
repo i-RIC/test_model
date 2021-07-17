@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SolverDefinition 
+	xmlns="www.iric.net/SolverDefinition/1.0"
+	name="test_model" 
+	caption="Test Model for testing auto build" 
+	version="1.0.0"
+	copyright="iRIC organization"
+	release="2021.07.17"
+	homepage="http://i-ric.org"
+	executable="test_model.exe"
+	iterationtype="time"
+	gridtype="structured2d"
+>
+	<CalculationCondition>
+	</CalculationCondition>
+	<GridRelatedCondition>
+		<Item name="Elevation" caption="Elevation (m)">
+			<Definition position="node" valueType="real" default="max" />
+		</Item>
+	</GridRelatedCondition>
+</SolverDefinition>
