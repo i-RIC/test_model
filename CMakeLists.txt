@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(<BASENAME> Fortran)
+project(test_model Fortran)
 
 include(GNUInstallDirs)
 
@@ -15,19 +15,19 @@ if(IRIC_SOLVER_USE_OPENMP)
 endif()
 
 # No need to add iric.f90 it will be added automatically by target_link_libraries
-add_executable(<BASENAME>
-  <ADD SOURCE FILES HERE>
+add_executable(test_model
+  source/test_model.f90
 )
 
-target_link_libraries(<BASENAME> PRIVATE iriclib::iriclib)
+target_link_libraries(test_model PRIVATE iriclib::iriclib)
 
 if(IRIC_SOLVER_USE_OPENMP AND OpenMP_Fortran_FOUND)
-  target_link_libraries(<BASENAME> PRIVATE OpenMP::OpenMP_Fortran)
+  target_link_libraries(test_model PRIVATE OpenMP::OpenMP_Fortran)
 endif()
 
-install(TARGETS <BASENAME> DESTINATION "${CMAKE_INSTALL_BINDIR}")
+install(TARGETS test_model DESTINATION "${CMAKE_INSTALL_BINDIR}")
 
-install(FILES <LOCATION OF definition.xml> DESTINATION "${CMAKE_INSTALL_BINDIR}")
+install(FILES iric/definition.xml DESTINATION "${CMAKE_INSTALL_BINDIR}")
 
 # include(CTest)
 
